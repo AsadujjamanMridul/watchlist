@@ -15,7 +15,7 @@ const Searchbar = () => {
 
         setQuery(e.target.value);
 
-        const search_URL = https://api.themoviedb.org/3/search/movie?api_key=046469c43912e47908d5650971d9d66a&language=en-US&page=1&include_adult=false&query=${query};
+        const search_URL = `https://api.themoviedb.org/3/search/movie?api_key=046469c43912e47908d5650971d9d66a&language=en-US&page=1&include_adult=false&query=${query}`;
 
         fetch(search_URL)
             .then(res => res.json())
